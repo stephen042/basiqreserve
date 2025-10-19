@@ -60,6 +60,7 @@
             <div>
                 <label class="block text-sm">Currency</label>
                 <select wire:model="currency" class="w-full border rounded-lg px-3 py-2">
+                    <option value="">select currency eg ($ - US Dollar (USD))</option>
                     <option value="$">$ - US Dollar (USD)</option>
                     <option value="€">€ - Euro (EUR)</option>
                     <option value="£">£ - British Pound (GBP)</option>

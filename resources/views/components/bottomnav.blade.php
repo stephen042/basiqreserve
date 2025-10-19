@@ -4,7 +4,7 @@
         <div style="display: flex; justify-content: space-between; align-items: center; max-width: 480px; margin: 0 auto;">
 
             <!-- Transfer -->
-            <a href="/send-funds" style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 16px; text-decoration: none; transition: transform 0.2s;">
+            <a href="/transfers" style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 16px; text-decoration: none; transition: transform 0.2s;">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" style="width: 24px; height: 24px; color: #374151;">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
@@ -13,7 +13,7 @@
             </a>
 
             <!-- Add Funds -->
-            <a href="/add-funds" style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 16px; text-decoration: none; transition: transform 0.2s;">
+            <a href="/add_funds" style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 16px; text-decoration: none; transition: transform 0.2s;">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" style="width: 24px; height: 24px; color: #374151;">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -32,7 +32,7 @@
             </a>
 
             <!-- Settings -->
-            <a href="/settings" style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 16px; text-decoration: none; transition: transform 0.2s;">
+            <a href="/details_settings" style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 16px; text-decoration: none; transition: transform 0.2s;">
                 <svg xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; color: #374151;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.591 1.066c1.49-.862 3.146.794 2.284 2.284a1.724 1.724 0 001.066 2.591c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.591c.862 1.49-.794 3.146-2.284 2.284a1.724 1.724 0 00-2.591 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.591-1.066c-1.49.862-3.146-.794-2.284-2.284a1.724 1.724 0 00-1.066-2.591c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.591c-.862-1.49.794-3.146 2.284-2.284a1.724 1.724 0 002.591-1.066z"/>

@@ -17,7 +17,7 @@
 
         <p class="text-sm mt-2">
             This name will appear on receipts and email notifications instead of
-            <span class="font-semibold text-[var(--text-primary)]">“TrustNet Bank”</span>.
+            <span class="font-semibold text-[var(--text-primary)]">“{{ config('app.name') }}”</span>.
         </p>
 
         <button wire:click.prevent="saveBank" class="btn btn-blue mt-4 flex justify-center items-center p-2">

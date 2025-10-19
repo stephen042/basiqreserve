@@ -46,6 +46,11 @@ class Login extends Component
 
             return;
         }
+        if($user->status == 'pending' || $user->status == 'denied'){
+            throw ValidationException::withMessages([
+                'email' => __('Your account is inactive or pending approval. Please contact support.'),
+            ]);
+        }
 
         Auth::login($user, $this->remember);
 

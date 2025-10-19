@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('bank')->default('Chase Bank');
             $table->string('support_link')->nullable();
             $table->string('role')->default('1'); // 1 = User, 2 = Admin
+            $table->enum('status', ['pending', 'approved', 'denied'])->default('pending');
             $table->rememberToken();
             $table->timestamps();
         });

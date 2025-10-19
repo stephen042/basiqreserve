@@ -17,6 +17,7 @@ Route::view('dashboard', 'dashboard')
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('transfers', 'transfers')->name('transfers');
+    Route::view('users', 'users')->name('users');
     Route::view('add_funds', 'add_funds')->name('add_funds');
     Route::view('history', 'history')->name('history');
     Route::view('details_settings', 'details_settings')->name('details_settings');

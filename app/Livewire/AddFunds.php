@@ -8,23 +8,33 @@ use Illuminate\Support\Facades\Auth;
 
 class AddFunds extends Component
 {
+    public $balance = 0;
     public float $amount = 0;
 
     protected $rules = [
         'amount' => 'required|numeric|min:1',
     ];
 
+    public function mount()
+    {
+        $this->balance = Auth::user()->balance;
+    }
+
     public function addFunds()
     {
         $this->validate();
-        
+
         $user = Auth::user();
 
         try {
             // Increment user's balance
             User::where('id', $user->id)->increment('balance', $this->amount);
 
-            $this->amount = 0; // reset input
+            // Refresh user balance immediately
+            $this->balance = User::find($user->id)->balance;
+
+            // Reset amount input
+            $this->amount = 0;
 
             // Dispatch success notification
             $this->dispatch('notify', 'Funds added successfully!', 'success');

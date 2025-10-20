@@ -49,7 +49,7 @@
 
         <!-- Balance Info -->
         <div class="text-sm bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 rounded-lg px-4 py-3 mt-4">
-            <p style="font-size: 16px"><strong>Available Balance:</strong> $ 5,000,000,000</p>
+            <p style="font-size: 16px"><strong>Available Balance:</strong> $ {{ auth()->user()->balance }}</p>
         </div>
 
         <!-- Submit Button -->

@@ -11,7 +11,7 @@
         </div>
 
         <input type="text" placeholder="e.g., MyBank International, GlobalTrust Bank" wire:model.defer="bank"
-            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500" style="color: black" />
+            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500" style="color: rgb(123, 120, 120)" />
 
         @error('bank') <span class="text-red-500 text-sm mt-1">{{ $message }}</span> @enderror
 

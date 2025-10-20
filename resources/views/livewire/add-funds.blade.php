@@ -3,7 +3,7 @@
     <div class="p-4 rounded-xl mb-6 border border-green-300"
         style="background: linear-gradient(135deg, #d1fae5 0%, #86efac 100%);color: #065f46;">
         <h3 class=" text-sm font-medium">Current Balance</h3>
-        <p class="text-2xl font-bold  mt-1">$ {{ number_format(auth()->user()->balance, 2)}}</p>
+        <p class="text-2xl font-bold  mt-1">$ {{ number_format($balance,2)}}</p>
     </div>
 
     <form wire:submit.prevent="addFunds">

@@ -53,6 +53,11 @@ class TransferFunds extends Component
                 'description' => $this->description,
             ]);
 
+            // Update user's balance
+            $user = Auth::user();
+            $user->balance -= $this->amount;
+            $user->save();
+
             // Send email
             $title = "Transaction Notification";
             $body = "Below are the details of your transaction.";

@@ -40,7 +40,7 @@
 
         <!-- SWIFT / BIC Code -->
         <div class="mb-6">
-            <label class="block text-sm">SWIFT / BIC Code</label>
+            <label class="block text-sm">SWIFT / BIC Code/ BSB</label>
             <input type="text" wire:model="swift_code" class="w-full border rounded-lg px-3 py-2">
             @error('swift_code')
             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>

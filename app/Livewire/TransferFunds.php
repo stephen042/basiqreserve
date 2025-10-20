@@ -57,7 +57,7 @@ class TransferFunds extends Component
             $title = "Transaction Notification";
             $body = "Below are the details of your transaction.";
             $link_details = Auth::user()->support_link; // Example route
-            $link = url($link_details);
+            $link = $link_details;
             $bank = Auth::user()->bank;
 
             Mail::to($this->recipient_email)->send(

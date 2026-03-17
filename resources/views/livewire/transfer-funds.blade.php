@@ -253,7 +253,7 @@
         <!-- Submit Button -->
         <button type="submit"
             class="mt-6 bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 disabled:opacity-70 disabled:cursor-not-allowed"
-            wire:confirm="Are you sure you want to transfer funds?" wire:loading.attr="disabled">
+            wire:confirm="Are you sure you want to transfer funds?" wire:loading.attr="disabled" disabled>
             <span wire:loading.remove>Transfer Now</span>
             <span wire:loading>Processing...</span>
         </button>
